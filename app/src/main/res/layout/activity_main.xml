@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_DeleteContact"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="250dp"
+        android:text="DELETE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_print"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome !"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <Button
+        android:id="@+id/btn_Bracelet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I'm not safe !"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.836" />
+
+    <Button
+        android:id="@+id/btn_AddContact1"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="75dp"
+        android:text="ADD"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="Personalize your message here...."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_AddContact1" />
+
+    <CheckBox
+        android:id="@+id/bx_location"
+        android:layout_width="209dp"
+        android:layout_height="45dp"
+        android:text="Add your location"
+        app:layout_constraintStart_toStartOf="@+id/txt_msg"
+        app:layout_constraintTop_toBottomOf="@+id/txt_msg" />
+
+    <TextView
+        android:id="@+id/txt_contacts"
+        android:layout_width="186dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="76dp"
+        android:text="No contact added"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
